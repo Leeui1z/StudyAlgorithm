@@ -11,7 +11,6 @@ class _220904_no1924
     //         1,3,5,7,8,10,12월은 31일, 4,6,9,11월은 30일, 2월은 28일까지.
     static void Main()
     {
-        int day = 0;
         int[] monthArr = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         int x = int.Parse(Console.ReadLine());
         int y = int.Parse(Console.ReadLine());
