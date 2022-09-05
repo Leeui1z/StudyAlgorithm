@@ -13,14 +13,15 @@ class _220904_no1924
     {
         int day = 0;
         int[] monthArr = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-        int x, y = int.Parse(Console.ReadLine());
-        for (int i = 0; i <=12; i++)//....고민해볼것...다르게 하는 방법은 없을까....
+        int x = int.Parse(Console.ReadLine());
+        int y = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <x; i++)
         {
-            day += monthArr[i];
+            y += monthArr[i];
         }
-        day += y;
-        day = day % 7;//day값을 7로 나눈 나머지 --7로 떨어지면 일요일, 이후는 월화수목금토일
-        switch (day)
+        y = y % 7;//day값을 7로 나눈 나머지 --7로 떨어지면 일요일, 이후는 월화수목금토일
+        switch (y)
         {
             case 0: Console.WriteLine("일요일");break;
             case 1: Console.WriteLine("월요일"); break;
